@@ -8,6 +8,15 @@ merely leave things broken, it made the breakage more efficient. It reads
 exactly like a tired engineer's real commit subject — flat, factual,
 unaware of its own punchline — and it avoids the obvious angles (no
 revert, no testing in production, no "broke everything").
+
+T4 review (gpt-6.1-sol): Sol ranked this line #1 over the fallback
+"fix: slow login by caching the access denied" — the fallback reads more
+like an intentional joke than a repair gone wrong, while this line reads as
+a plausible rushed commit subject. Sol offered no beating alternative and
+the KEEP decision was taken. One minor note: the phrase "login bug" is
+vague, but the line still reads as a plausible rushed commit subject.
+The irony is specific: the repair made the failure faster/more efficient,
+rather than merely leaving it still present.
 """
 
 import os
